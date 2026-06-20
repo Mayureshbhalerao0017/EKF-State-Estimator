@@ -1,0 +1,22 @@
+function p = vehicleParams()
+
+
+    
+    p.R  = 0.335;        % wheel radius [m]
+    p.Iw = 1.65;        % wheel inertia [kg m^2] (same for all wheels here)
+    p.Cx = 40000;      % longitudinal tire stiffness (Fx = Cx * sr)
+
+    
+    p.C_alpha_f = 60000;   % front axle lateral stiffness [N/rad]
+    p.C_alpha_r = 60000;   % rear axle lateral stiffness [N/rad]
+
+   
+    p.Lf = 0.9;        % distance CoM -> front axle [m]
+    p.Lr = 0.7;        % distance CoM -> rear axle [m]
+    p.w  = 1.2;        % track width [m]
+
+    % Vehicle mass / inertiap.m  = 300;        % mass [kg] (example, tune for your car)
+    p.Iz = 115;        % yaw moment of inertia [kg m^2] (example)
+
+
+end
